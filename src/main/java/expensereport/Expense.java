@@ -1,6 +1,12 @@
 package expensereport;
 
-public class Expense {
+public abstract class Expense {
+    abstract boolean isOverage();
+
+    abstract String getName();
+
+    abstract boolean isMeal();
+
     public enum Type {DINNER, BREAKFAST, CAR_RENTAL}
 
     ;
